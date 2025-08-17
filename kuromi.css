@@ -1,0 +1,58 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at center, #F0B4BC 7%, #ffffff 67%);
+    height: 100vh;  
+    margin: 0;
+    overflow: hidden;
+}
+
+.box {
+    height: 140px;
+    width: 400px;
+    background-color: #363232;
+    border-radius: 30px;
+    position: absolute;
+    top: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* behind */
+}
+
+.box p {
+    color: white;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.start-btn {
+    background-color: #D98D91;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 5px 40px 5px 40px;
+    display: block;        /* make it a block element */
+    margin: auto;
+}
+
+.start-btn:hover {
+    background-color: #f0acae;  /* lighter pink */
+    transform: scale(1.05);     /* little zoom */
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.kuromi img {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 170px;
+    z-index: 99; /* in front */
+}
+
+.front-elements {
+    position: absolute;
+    top: 100px;    /* move up/down */
+    left: 50%;     /* start in middle */
+    transform: translateX(-50%);
+}

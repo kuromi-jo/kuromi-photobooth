@@ -1,0 +1,159 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at center, #F0B4BC 7%, #ffffff 67%);
+    height: 100vh;  
+    margin: 0;
+        
+}
+
+.instruction {
+    color: #363232;
+    font-size: 20px;
+    padding-top: 100px;
+    padding-left: 315px;
+}
+
+.camera-box {
+    height: 300px;
+    width: 535px;
+    background-color: #D9D9D9;
+    border: 3px solid #1E1E1E;
+    display: flex;
+    justify-content: center; 
+    position: relative; 
+}
+
+#camera {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transform: scaleX(-1);
+}
+
+#camera-flash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+    z-index: 1;
+}
+
+.camera-btn {
+    height: 70px;
+    width: 70px;
+    border-radius: 100px;
+    border: 3px solid #1E1E1E;
+    background-color: #D98D91;
+    position: absolute;
+    top: 265px;
+    display: flex;             /* make it a flex container */
+    justify-content: center;   /* center horizontally */
+    align-items: center;       /* center vertically */
+    font-family: 'Poppins', sans-serif;
+    color: #1E1E1E;
+    font-size: 25px;
+    z-index: 2;
+}
+
+.camera-btn svg {
+    width: 32px;
+    height: 32px;
+    fill: #1E1E1E;   /* changes the inside color */
+}
+
+.camera-btn:hover {
+    cursor: pointer;
+    background-color: #F0B4BC;
+    transform: scale(1.05);
+}
+
+.camera-container {
+    position: fixed;
+    top: 200px;  /* move down */
+    left: 38%;   /* center horizontally */
+    transform: translateX(-50%);
+}
+
+.retake-btn {
+    background-color: #F0B4BC;
+    border: 2px solid #363232;
+    border-radius: 100px;
+    padding: 0px 30px 0px 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.retake-btn:hover {
+    cursor: pointer;
+    background-color: #D98D91;
+    transition: background-color 0.3s ease;
+    transform: scale(1.05);
+}
+
+.download-btn {
+    background-color: #D98D91;
+    border: 2px solid #363232;
+    border-radius: 100px;
+    padding: 0px 30px 0px 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.download-btn:hover {
+    cursor: pointer;
+    background-color: #F0B4BC;
+    transition: background-color 0.3s ease;
+    transform: scale(1.05);
+}
+
+.buttons {
+    margin-top: 380px;
+    margin-left: 430px;
+    display: flex;          /* makes children flex items */
+    gap: 35px;              /* space between children */
+}
+
+.photostrip {
+    background-color: #363232; /* dark strip background */
+    border-radius: 20px;
+    width: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-slot {
+    width: 180px;
+    height: 100px;
+    background-color: #d9d9d9; /* placeholder for photo */
+    margin: 10px 0;
+}
+
+.photostrip-footer {
+    color: #fff;
+    font-size: 12px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.kuromi-photostrip {
+    position: fixed;   /* stays in place even when scrolling */
+    top: 30px;         /* distance from top of the screen */
+    right: 325px;        /* distance from left of the screen */
+    z-index: 1000;     /* ensures it’s on top of other elements */
+    padding-top: 120px; 
+    height: 580px;  
+}
+
+.kuromi-decor {
+    position: absolute;
+    top: 0;;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 135px;
+    z-index: 99; /* in front */
+}
